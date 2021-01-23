@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
 
     private double saldo;
     private int agencia;
@@ -11,8 +11,7 @@ public class Conta {
         System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
-        this.saldo = 100;
-        System.out.println("Estou criando uma conta " + this.numero);
+        System.out.println("Criei a conta " + this.numero);
     }
 
     public void deposita(double valor) {
